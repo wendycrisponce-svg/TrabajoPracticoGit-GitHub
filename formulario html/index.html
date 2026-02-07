@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Indica que el documento usa HTML5 -->
+<html lang="es"> <!-- Define el idioma principal del contenido -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para que se vean bien las tildes y símbolos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsive en móviles -->
+  <title>TrabajopracticoGit&GitHub</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo con los estilos -->
+</head>
+
+<body>
+<p>Trabajo practico: Git&GitHub</p>
+  <!-- Contenedor principal del formulario -->
+  <section> 
+    <!-- Inicio del formulario -->
+    <form action="atencion-cliente"> <!-- action indica a dónde se enviarán los datos (simulado aquí) -->
+
+      <h2>Eventos de quince años</h2> <!-- Título visible del formulario -->
+
+      <!-- Campo de nombre -->
+      <fieldset>
+        <label for="name">Nombre:</label> <!-- Etiqueta del campo -->
+        <input type="text" id="name" name="name" required minlength="3" maxlength="20"> <!-- Campo de texto obligatorio con mínimo y máximo de caracteres -->
+      </fieldset>
+
+      <!-- Campo de apellido -->
+      <fieldset>
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname">
+      </fieldset>
+
+      <!-- Campo de email -->
+      <fieldset>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <!-- Valida que el texto tenga formato de correo -->
+      </fieldset>
+
+      <!-- Campo de teléfono -->
+      <fieldset>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel"> <!-- Campo para ingresar número de teléfono -->
+      </fieldset>
+
+      <!-- Campo para ingresar la URL del producto -->
+      <fieldset>
+        <label for="url">URL del pack de eventos:</label>
+        <input type="url" id="url" name="url"> <!-- Valida que el texto sea una dirección web -->
+      </fieldset>
+
+      <!-- Selector de color -->
+      <fieldset>
+        <label for="color">Color del producto:</label>
+        <input type="color" id="color" name="color"> <!-- Muestra un selector de color -->
+      </fieldset>
+
+
+      <!-- Selección de tamaño del producto con checkbox -->
+      <fieldset>
+        <legend>Tamaño de invitados</legend> <!-- Título del grupo -->
+        <label><input type="checkbox" name="tamaño" value="pequeño"> Pequeño(10 a 70 invitados)</label>
+        <label><input type="checkbox" name="tamaño" value="mediano"> Mediano (70 a 150 invitados)</label>
+        <label><input type="checkbox" name="tamaño" value="grande"> Grande (más de 150 invitados)</label>
+      </fieldset>
+
+      <!-- Motivo de la consulta con radio buttons -->
+      <fieldset>
+        <legend>Motivo de su consulta</legend>
+        <label><input type="radio" name="motivo" value="reintegro">Consulta de precios</label>
+        <label><input type="radio" name="motivo" value="no-enviado"> Disponibilidad</label>
+        <label><input type="radio" name="motivo" value="falla"> Pack completo del evento</label>
+      </fieldset>
+
+      <!-- Fecha de compra -->
+      <fieldset>
+        <label for="date">Fecha de consulta:</label>
+        <input type="date" id="date" name="date"> <!-- Muestra un calendario para elegir la fecha -->
+      </fieldset>
+
+
+
+      <!-- Subida de archivo (comprobante) -->
+      <fieldset>
+        <label for="archivo">Adjuntar detalles extras o de interes:</label>
+        <input type="file" id="archivo" name="archivo"> <!-- Permite subir un archivo desde el dispositivo -->
+      </fieldset>
+
+      <!-- Área de texto para escribir el reclamo -->
+      <fieldset>
+        <label for="msg">Detalles adicionales (opcional):</label>
+        <textarea id="msg" name="mensaje" rows="4"></textarea> <!-- Área de texto para escribir varias líneas -->
+      </fieldset>
+
+      <!-- Menú desplegable para elegir el área de consulta -->
+      <fieldset>
+        <label for="area">Área  donde nos conocistes:</label>
+        <select id="area" name="area"> <!-- Menú con opciones -->
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+          <option value="tiktok">Tiktok</option>
+          <option value="conocidos">Por Conocidos</option>
+        </select>
+      </fieldset>
+
+      <!-- Campo con sugerencias usando datalist -->
+      <fieldset>
+        <label for="medio">Medio preferido de contacto:</label>
+        <input list="medios" id="medio" name="medio"> <!-- Campo de texto con sugerencias -->
+        <datalist id="medios"> <!-- Lista de opciones sugeridas -->
+          <option value="Email">
+          <option value="Teléfono">
+          <option value="WhatsApp">
+          <option value="SMS">
+        </datalist>
+      </fieldset>
+
+      <!-- Campo oculto que guarda un valor interno -->
+      <input type="hidden" name="token" value="abc123"> <!-- No se ve en pantalla, pero se envía con el formulario -->
+
+      <!-- Botones de envío y limpieza -->
+      <fieldset>
+        <input type="submit" value="Enviar"> <!-- Botón que envía el formulario -->
+        <input type="reset" value="Limpiar"> <!-- Botón que borra todos los campos -->
+      </fieldset>
+
+    </form>
+  </section>
+
+</body>
+</html>
