@@ -1,6 +1,6 @@
 /* Fondo general del cuerpo de la página */
 body {
-  background-color: #4c0955; /* Color de fondo oscuro para toda la página */
+  background-color: #A63251; /* Color de fondo oscuro para toda la página */
   display: flex; /* Usa Flexbox para alinear el contenido */
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -11,8 +11,8 @@ body {
 
 /* Contenedor principal del formulario */
 section {
-  background-color: #57b394; /* Color de fondo del formulario */
-  border: 4px solid #8a2da1; /* Borde visible con color personalizado */
+  background-color: #F2BDCB; /* Color de fondo del formulario */
+  border: 4px solid #260F20; /* Borde visible con color personalizado */
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espacio interno alrededor del contenido */
   width: 90%; /* Ocupa el 90% del ancho disponible */
