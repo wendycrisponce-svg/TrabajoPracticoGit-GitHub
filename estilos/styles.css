@@ -1,0 +1,122 @@
+/* Fondo general del cuerpo de la página */
+body {
+  background-color: #4c0955; /* Color de fondo oscuro para toda la página */
+  display: flex; /* Usa Flexbox para alinear el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  min-height: 100vh; /* Ocupa el alto completo de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  font-family: Arial, sans-serif; /* Fuente principal del texto */
+}
+
+/* Contenedor principal del formulario */
+section {
+  background-color: #57b394; /* Color de fondo del formulario */
+  border: 4px solid #8a2da1; /* Borde visible con color personalizado */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno alrededor del contenido */
+  width: 90%; /* Ocupa el 90% del ancho disponible */
+  max-width: 600px; /* No supera los 600px de ancho */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo del título del formulario */
+form h2 {
+  text-align: center; /* Centra el texto */
+  color: #732432; /* Color del texto */
+  margin-bottom: 1em; /* Espacio debajo del título */
+}
+
+/* Espaciado entre grupos de campos */
+form fieldset {
+  border: none; /* Elimina el borde por defecto del fieldset */
+  margin-bottom: 15px; /* Espacio entre cada grupo de campos */
+}
+
+/* Estilo de las etiquetas */
+label {
+  display: block; /* Ocupa toda la línea */
+  margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+  font-weight: bold; /* Texto en negrita */
+  color: #732432; /* Color del texto */
+}
+
+/* Estilo general para campos de entrada, selectores y áreas de texto */
+input,
+select,
+textarea {
+  width: 100%; /* Ocupan todo el ancho disponible */
+  padding: 8px; /* Espacio interno */
+  font-size: 1em; /* Tamaño de fuente uniforme */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  border: 1px solid #999; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco para los campos */
+}
+
+/* Estilo cuando el campo está enfocado (activo) */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #000; /* Borde negro al hacer clic o tabular */
+  outline: none; /* Elimina el contorno azul por defecto */
+}
+
+/* Estilo específico para el área de texto */
+textarea {
+  height: 100px; /* Altura fija */
+  resize: vertical; /* Permite agrandar solo hacia arriba o abajo */
+}
+
+/* Estilo para el grupo de botones al final del formulario */
+fieldset:last-of-type {
+  display: flex; /* Usa Flexbox para organizar los botones */
+  justify-content: space-between; /* Distribuye los botones con espacio entre ellos */
+  flex-wrap: wrap; /* Permite que los botones se acomoden en varias líneas si es necesario */
+  gap: 10px; /* Espacio entre botones */
+}
+
+/* Estilo para los botones de enviar, limpiar y personalizados */
+input[type="submit"],
+input[type="reset"],
+button {
+  padding: 10px 20px; /* Espacio interno horizontal y vertical */
+  background-color: #732432; /* Color de fondo del botón */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Efecto al pasar el mouse por encima de los botones */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #5a1c27; /* Color más oscuro al hacer hover */
+}
+
+/* Estilo para el botón tipo imagen */
+input[type="image"] {
+  width: 50px; /* Ancho fijo */
+  height: 50px; /* Alto fijo */
+  border: none; /* Sin borde */
+}
+
+/* Estilos responsive para pantallas pequeñas (menos de 480px de ancho) */
+@media (max-width: 480px) {
+  section {
+    padding: 15px; /* Reduce el padding para pantallas chicas */
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.9em; /* Reduce el tamaño de fuente para mejor ajuste */
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  button {
+    width: 100%; /* Los botones ocupan todo el ancho disponible */
+  }
+}
